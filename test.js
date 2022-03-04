@@ -7,7 +7,7 @@ function plus(a,b){
     let sum = a+b;
     alert(`a+b = ${sum}`);
 } 
-
+//Для коммита
 function umn(a,b){
     let um = a*b;
     alert(`a*b = ${um}`);

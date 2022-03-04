@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    let identinicator = prompt('Выберите нужное действие: exp, -, +, /, *', '');
+    let a = prompt("a", '');
+    let b = prompt("b", '');
+
+    function minus(a, b) {
+      return a - b;
+    }
+
+    function plus(a, b) {
+      return a + b;
+    }
+
+    function umn(a, b) {
+      return a * b;
+    }
+
+    function del(a, b) {
+      return a + b;
+    }
+
+    function pow(a, b) {
+      let result = a;
+      for (let i = 1; i < b; i++) {
+        result *= a;
+      }
+      return result;
+    }
+
+    if (identinicator == '+') {
+      let p=plus(a, b);
+      alert(`a+b = ${p}`);
+    } else if (identinicator = "-") {
+      let m=minus(a, b);
+      alert(`a-b = ${m}`);
+    } else if (identinicator = "*") {
+      let u=umn(a, b);
+      alert(`a*b = ${u}`);
+    } else if (identinicator = "/") {
+      if (b = 0) {
+        alert("b=0, на ноль делить нельзя")
+      } else {
+        let d=del(a, b);
+        alert(`a/b = ${d}`);
+      }
+    } else if (identinicator = "exp") {
+      if (b < 1) {
+        alert("Неверно задана степень")
+      } else {
+        let e=pow(a, b);
+        alert(`${a} ^ ${b} =${e}`);
+      }
+    }else alert('Error');
+  </script>
+</body>
+
+</html>

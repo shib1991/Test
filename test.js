@@ -42,6 +42,6 @@ if (identinicator="+"){
     if(b<1){
      alert("Неверно задана степень")
     }else{
-        pow(a,b);
+        alert(pow(a,b));
     }
 }
